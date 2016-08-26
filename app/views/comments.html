@@ -1,0 +1,17 @@
+<h1>Comments for {{saucer.name}}</h1>
+<p>Go back to <a ng-href="#/saucers/{{restaurant.id}}">{{restaurant.name}}</a></p>
+<div class="row">
+    <div class="col-md-12">
+        <a ng-click="openCreateCommentModal()" class="btn btn-primary pull-right">
+            <span class="glyphicon glyphicon-plus"></span> Add comment
+        </a>
+    </div>
+</div>
+<div class="row">
+  <div class="col-md-12" ng-repeat="comment in comments">
+    <div class="card wide">
+      <p><strong>Author: </strong> Fulanito</p>
+      <p>{{comment.comment}}</p>
+    </div>
+  </div>
+</div>

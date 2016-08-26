@@ -1,0 +1,32 @@
+.card{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px #999;
+    height: 200px;
+    padding: 10px;
+    position: relative;
+
+    &.wide{
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .rate{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+
+        span{
+            width: 10px;
+            height: 10px;
+            background-color: #ccc;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 5px;
+
+            &.rated{
+                background-color: #ffcc00;
+            }
+        }
+    }
+}
